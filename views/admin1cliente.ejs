@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/160be7540d.js" crossorigin="anonymous"></script>
+    <title>Crear Usuario</title>
+</head>
+
+<body>
+    <header class="main-header">
+        
+        <nav class="sidebar">
+            <div class="text">Configuraciones</div>
+            <ul>
+                <li>
+                    <a href="/adminajustes" class="feat-btn">Inicio
+                       
+                    </a>
+                 
+                </li>
+                <li>
+                    <a href="#" class="pewt-btn">Clientes
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="pewt-show">
+                        <li><a href="/admin1cliente">Crear cliente</a></li>
+                        <li><a href="/admin3cliente">Buscar cliente</a></li>
+                        <li><a href="/admin4cliente">Eliminar cliente</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="feat-btn">Producto
+                        <span class="fas fa-caret-down first"></span>
+                    </a>
+                    <ul class="feat-show">
+                        <li><a href="/crearprodu">Crear producto</a></li>
+                        <li><a href="/buscarprodu">Buscar producto</a></li>
+                        <li><a href="/actualizarprodu">Actualizar producto</a></li>
+                        <li><a href="/eliminarprodu">Eliminar producto</a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+
+                    <div class="tt">
+                        <a href="">
+                            Administrar quejas</a>
+                    </div>
+                <li>
+                    <a href="/" class=>Cerrar sesion
+                           
+                    </a>
+                     
+                </li>
+            </ul>
+
+</nav>
+            <div class="content-header">            
+                <div class="content-admin">
+                <form action="/crearusu" method="post">
+                <h1 class="hero">CREAR USUARIO</h1>
+    
+                    <h3 class="title-admin">Nombre</h3>
+                    <input type="text" name="name"  class="form-control" placeholder="Ingrese Nombre">
+    
+                    <h3 class="title-admin">Identificacion</h3>
+                    <input type="number" name="id" class="form-control" placeholder="Ingrese Identificacion" >
+    
+                    <h3 class="title-admin">Correo Electronico</h3>
+                    <input type="email" name="email" class="form-control" placeholder="Ingrese Correo Electronico" >
+                  
+                    <h3 class="title-admin">numero</h3>
+                    <input type="number" name="number" class="form-control" placeholder="Ingrese su numero" >
+
+                    <h3 class="title-admin">Contraseña</h3>
+                    <input type="password" name="password" class="form-control" placeholder="Ingrese Contraseña" >
+
+
+                    <button class="form-control-boton" type="submit">Guardar</button>
+                </form>
+            </div>
+            </div>
+        </header>
+<script>
+    let cerrar = document.querySelectorAll(".close")[0];
+    let abrir = document.querySelectorAll(".tt")[0];
+    let modal = document.querySelectorAll(".modal")[0];
+    let modalc = document.querySelectorAll(".modal-container")[0];
+
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+    });
+    $('.serv-btn').click(function () {
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+    });
+    $('.flew-btn').click(function () {
+        $('nav ul .flew-show').toggleClass("show2");
+        $('nav ul .second').toggleClass("rotate");
+    });
+    $('.rewt-btn').click(function () {
+        $('nav ul .rewt-show').toggleClass("show3");
+        $('nav ul .second').toggleClass("rotate");
+    });
+    $('.pewt-btn').click(function () {
+        $('nav ul .pewt-show').toggleClass("show4");
+        $('nav ul .first').toggleClass("rotate");
+    });
+    $('.tiow-btn').click(function () {
+        $('nav ul .tiow-show').toggleClass("show5");
+        $('nav ul .first').toggleClass("rotate");
+    });
+    $('nav ul li').click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    abrir.addEventListener("click", function (e) {
+        e.preventDefault()
+        modalc.style.opacity = "1";
+        modalc.style.visibility = "visible";
+        modal.classList.toggle("modal-close");
+
+
+    });
+
+    cerrar.addEventListener("click", function () {
+        modal.classList.toggle("modal-close");
+
+        setTimeout(function () {
+            modalc.style.opacity = "0";
+            modalc.style.visibility = "hidden";
+        }, 600)
+    })
+
+    window.addEventListener("click", function (e) {
+        console.log(e.target);
+        if (e.target == modalc) {
+            modal.classList.toggle("modal-close");
+            setTimeout(function () {
+                modalc.style.opacity = "0";
+                modalc.style.visibility = "hidden";
+            }, 600)
+        }
+    })
+</script>
+
+    <!--<nav class="navbar">
+            <ul>
+                <li><a class="item" href="ajustes.html">Inicio</a></li>
+                <li><a class="item" href="">Catalogo</a></li>
+                <li><a class="item" href="">Catalogo</a></li>
+                <input class="buscador" type="search" placeholder="Consulta lo que buscas">
+                <li><a class="item" href="">Registrate</a></li>
+                <li><a class="item" href="">Iniciar Sesión</a></li>
+                <li><a class="item" href="">Carrito</a></li>
+            </ul>
+        </nav>
+    
+    --> 
+
+</body>
+
+</html>

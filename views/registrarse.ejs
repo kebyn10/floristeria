@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <title>INSCRIPCION</title>
+</head>
+
+<body>
+    <form action="/registro" method="post">
+        <div class="form">
+            <h1>Registro</h1>
+            <div class="grupo">
+                <input type="text" name="name" id="name" required><span class="barra"> </span>
+                <label for=""> Nombre</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="id" id="idntidad" required><span class="barra"> </span>
+                <label for=""> id</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="number" id="numero" required><span class="barra"> </span>
+                <label for=""> Numero de telefono </label>
+            </div>
+            <div class="grupo">
+                <input type="email" name="email" id="email" required><span class="barra"> </span>
+                <label for=""> Correo</label>
+            </div>
+
+            <div class="grupo">
+                <input type="password" name="password" id="password" required><span class="barra" minlength="6"> </span>
+                <label for=""> Clave</label>
+            </div>
+            
+           
+
+
+
+
+            <button type="submit">suscribirte</button>
+            <button type="reset">Borrar </button>
+            <p><a href="/">
+                <center>   <h5>volver al inicio </h5></center> 
+                </a></p>
+            <p><a href="/login">
+                 <center>   <h6>¿ ya tienes una cuenta ? </h6></center>
+                </a></p>
+
+        </div>
+    </form>
+
+</body>
+
+</html>

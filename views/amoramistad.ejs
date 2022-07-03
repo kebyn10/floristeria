@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/catalogo.css">
+  <title>catalogo</title>
+</head>
+<body>
+  <header>
+    <div class="container__menu">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="">Dias especiales</a>
+                <ul>
+                  <li><a href="/diapadre">Dia del padre </a></li>
+                  <li><a href="/diamadre">Dia de la madre </a></li>
+                  <li><a href="/diahombre">Dia del hombre </a></li>
+                  <li><a href="/diamujer">Dia de la mujer </a></li>
+                  <li><a href="/amoramistad">Amor y amistad </a></li> 
+                </ul>
+            </li>
+            <li><a href="">Ocasiones</a>
+              <ul>
+                <li><a href="/boda">boda </a></li> 
+                <li><a href="/grados">Grados </a></li>
+                <li><a href="/cumple">Cumpleaños </a></li> 
+                
+               
+              </ul>
+            </li>
+          
+            <li><a href="">promociones</a></li>
+          
+            <div class="search">
+              <input type="search" placeholder="Consulta lo que buscas">
+            </div>
+             <li><a href="/regis">Registro</a></li>
+             <li><a href="/login">iniciar sesion</a></li>
+             <li><img src="https://res.cloudinary.com/dwczm63h6/image/upload/v1654969156/floristeria%20aqua/anadir-al-carrito_omi9xo.png" alt="" class="tati"></li>
+          </ul>
+            
+         
+          
+        </nav>
+      </div>
+    </div>
+
+</header>
+<div class="contenedor">
+
+
+  <% tt.forEach((producto)=> { %>
+    <div class="primero">
+      <img src="<%= producto.imagen %>"  alt="...">
+     <h4>
+        <%= producto.nombre %></h4>
+       <p> <%= producto.valor %>COP</p>
+       <form action="/comprar/<%= producto.cod_referencia %>" method="get">
+        <button type="submit" class="bb">Comprar</button>
+      </form>
+      </div>
+    
+  <% }) %>
+  
+  
+  
+  
+  
+  </div>
+</body>
+</html>

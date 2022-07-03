@@ -1,0 +1,55 @@
+*{
+    margin:0;
+
+}
+
+body{
+    background-image: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656427114/floristeria%20aqua/Donde_crecen_las_flores_hay_esperanza._y41xv1.png);
+    background-repeat: no-repeat;
+    background-size : 2000px   1000px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 110px;
+}
+.comp{
+    background-image: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656186996/floristeria%20aqua/WhatsApp_Image_2022-06-25_at_1.25.38_PM_mfyjff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 270px 3px;
+}
+.ini{
+    background-image: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656188558/floristeria%20aqua/WhatsApp_Image_2022-06-25_at_1.15.43_PM_fouvd1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
+    padding: 270px 3px;
+}
+button{
+   
+    padding: 20px;
+    border-radius:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(194, 21, 21);
+    color: white;
+    border: none;
+    
+}
+.btn{
+   position: relative;
+   top: 470px;
+   right: 250px;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+     font-size: 20px;
+}

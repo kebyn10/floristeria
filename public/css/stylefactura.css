@@ -1,0 +1,49 @@
+body{
+    background: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656503931/animals_kittens_cat_flowers-148220_gu1wec.jpg)no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 30px;
+    width: 800px;
+    border-radius: 15px;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+}
+
+form{
+     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div{
+   display: flex;
+   justify-content: space-between; 
+}
+
+p{
+    width: 400px;
+    font-size: 30px;
+}
+
+.parrafo{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px 20px 10px 20px;
+    margin: 0 15px 0 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 138, 230);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

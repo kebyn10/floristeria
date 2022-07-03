@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.header{
+text-align: center;
+background-image: url("https://res.cloudinary.com/dwczm63h6/image/upload/v1656351204/header-bg_ojnvmb.png");
+background-repeat: no-repeat;
+background-size: 100%;
+height: 600px;
+margin: 0;
+
+
+}
+body{
+    background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+ 
+}
+.avatar{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.user-name{
+    font-size: 18px;
+    margin-top: 14px;
+    color: #fff;
+}
+.social{
+list-style: none;
+text-align: center;
+padding: 0;
+}
+.social li{
+    display: inline-block;
+    margin: 5px;
+}
+a{
+    text-decoration: none;
+    color: #0a447e;
+    font-size: 21px
+}
+a:hover{
+    color: #063769;
+}
+.icon{
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-size: cover;
+
+}
+.email{
+    background-image: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656351732/email_tqulpu.png);
+}
+.facebook{
+    background-image: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656351726/facebook_odi7qu.png);
+}
+.about{
+    padding: 10px;
+background-color: rgb(4, 84, 124);
+width: 550px;
+height: 300px;
+position: relative;
+left: 720px;
+
+}
+.about h3{
+    color: #d0caca;
+    font-size: 26px;
+    text-align: center;
+}
+.about p{
+    color: #d0caca;
+    font-size: 19px;
+    border: rgb(34, 219, 215) solid;
+    text-align: center;
+    margin: 31px;
+    padding: 4px;
+}
+.mm{
+    color: #fff;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}

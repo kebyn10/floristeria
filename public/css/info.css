@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background:url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656276893/floristeria%20aqua/flor-plana-y-hojas-de-palmera-tropicales-sobre-fondo-escritorio-blanco-vista-superior-dise%C3%B1o-creativo-con-espacio-para-copiar-143330367_eek4pd.jpg) no-repeat;  background-attachment: fixed;
+  background-size: cover;
+  width: 100vmax;
+  height: 100vmax  ;
+}
+.jj{
+  background: rgb(202, 135, 72);
+  margin: 20px;
+  border-radius: 20px;
+
+}
+th{
+  color: aliceblue;
+}

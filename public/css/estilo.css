@@ -1,0 +1,133 @@
+:root {
+ --colorTextos: #49454567;
+}
+
+
+
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #000000;
+    background: url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656081516/floristeria%20aqua/129-1295403_photo-wallpaper-roses-wood-pink-romantic-roses-fondos_eyguls.jpg) no-repeat;
+    background-size: cover;
+    height: 937px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: 600;
+}
+form{
+    background: #ffff;
+    padding: 40ppx 0;
+    box-shadow: 0 0 6px 0  rgb(241, 240, 240);
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+    
+    
+}
+
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+    outline: none;
+    color:#be55d8;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out  all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label {
+top: -14px;
+font-size: 12px;
+color: rgb(0, 0, 0);
+}
+input:valid{
+    top: -14px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #be55d8, #333333);
+    transition: 0.3s ease with;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #be55d8;
+    padding-top: 20px;
+}
+
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #914bc3, #ff71fb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #914bc3, #ff71fb);
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #ffff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+
+
+

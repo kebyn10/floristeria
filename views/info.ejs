@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    
+       
+          
+             
+     
+      
+    <div class="header">
+        <img src="https://res.cloudinary.com/dwczm63h6/image/upload/v1656352608/desconocido_fad1w7.png" alt="" class="avatar">
+        <h1 class="user-name"></h1>
+    </div>
+    <% data.forEach((info)=> { %>
+    <ul class="social"><li>
+        <i class="icon email"></i>
+        <a href="mailto" class="mm"><%= info.email %></a>
+    </li>
+</ul>
+<div class="about">
+    <h3>Informacion Personal</h3>
+
+    <p>nombre: <%= info.nombre %></p>
+    <p>cedula: <%= info.id %></p>
+    <p>telefono: <%= info.number %></p>
+</div>
+<% }) %>
+</body>
+</html>

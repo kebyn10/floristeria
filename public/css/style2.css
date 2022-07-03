@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------encabezado-------------------*/
+header{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url(https://res.cloudinary.com/dwczm63h6/image/upload/v1656339764/floristeria%20aqua/192843c8e9917699f0c38bf59f4a070f_ox1ygb.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    position:fixed;
+}
+.main-header{
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+/*.nav-bar{
+    width: 100%;
+    z-index: 5;
+    align-items:center;    
+}
+nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    font-family:'Dosis', sans-serif;
+    list-style: none;
+}
+nav ul li a:hover{
+    position:static;
+    background-color: rgba(223, 61, 21, 0.61);
+    transition: all 350ms ease;
+    transform: scale(1.1)
+}
+.item{
+    text-decoration: none;
+    color: #fff;
+    font-size:20px;
+    padding:20px;    
+    display: flex;
+}
+.buscador{
+    width: 600px;
+    padding: 10px;
+    margin: 16px 45px;
+    border-radius: 10px;
+    border: rgb(255, 255, 255);
+    outline: none;
+}
+*/
+
+button{
+    margin: 20px;
+}
+.content-header{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content-admin{
+    background-color: rgba(199, 78, 183, 0.616);
+    width:auto;
+    height: auto;
+    padding:80px;
+    border-radius:10px;
+    border: rgb(255, 255, 255) solid 2px;
+}
+.hero{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px;
+    display:flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+.title-admin{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    margin-bottom:20px;
+    margin-top:20px;
+    display:flex;
+}
+.form-control{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 100%;
+    border: 2px solid transparent;
+    padding:25px 30px;
+    border-radius: 30px;
+    outline: none;
+}
+.form-control:hover{
+    text-decoration: none;
+    width: 100%;
+    padding:25px 30px;
+    border-radius: 30px;
+    transition: all 350ms ease;
+    transform: scale(1.1);
+    outline: none;
+}
+.form-control::placeholder{
+    color:#db1f8d;
+}
+/*----boton----*/
+.form-control-boton{
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 50%;
+    border: 2px solid transparent;
+    padding:10px;
+    border-radius: 30px;
+    outline: none;
+}
+.title-admin-boton{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px;
+    margin-bottom:20px;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+}
+.form-control-boton::placeholder{
+    color:#da3cb3;
+}
+/*-----input-----*/
+input[type="number"]{
+    width: 100%;
+    font-size:15px;
+    padding:auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+
+
+/* -----------------------sidebar-------*/
+
+.sidebar{
+    width: 250px;
+    height: 100%;
+    transition: left 0.4s ease;
+}
+
+.sidebar .text{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: rgb(216, 21, 190);
+    letter-spacing: 1px;
+}
+nav ul{
+   background:rgba(190, 21, 176, 0.486) ;
+   height: 100%;
+   width: 100%;
+   list-style: none;
+}
+
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(216, 90, 31, 0.027);
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li.active a{
+    color: rgb(255, 255, 255);
+    background:rgb(226, 24, 216);
+
+}
+nav ul ul{
+    position: static;
+    display: none;
+}
+nav ul .feat-show.show{
+    display: block;
+}
+nav ul .serv-show.show1{
+    display: block;
+}
+nav ul .flew-show.show2{
+    display: block;
+}
+nav ul .rewt-show.show3{
+    display: block;
+}
+nav ul .pewt-show.show4{
+    display: block;
+}
+nav ul .tiow-show.show5{
+    display: block;
+}
+
+
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+nav ul ul li a{
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+nav ul li.active ul li a{
+    color: #e6e6e6;
+    background: #6900616b;
+    border-left-color: transparent;
+}
+
+nav ul ul li a:hover{
+    color: rgb(255, 255, 255)!important;
+    background: #d618cdcc!important;
+}
+nav ul  li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition:transform 0.4s;
+}
+nav ul  li a span.rotate{
+    transform: translateY(-50%) rotate(-180deg);
+}
+.modal-container{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1500;
+    width: 90%;
+    height: 100vh;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    width: 50%;
+    height: 40%;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.9s;
+    transform: translateY(-95%);
+    border-radius: 10px;
+    background: #fff;
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.close{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #f44336;
+    color: #fff;
+    line-height: 28px ;
+    cursor:pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+.modal-close{
+    transform: translateY(-380%);
+}
+.dd{
+    width: 500px;
+    height: 140px;
+  
+    margin-top:60px;
+}
+
+.hhh{
+    border-radius: 20px;
+    background:#fff;
+    width: 60px;
+    height:40px;
+    margin-left: 20px;
+}
